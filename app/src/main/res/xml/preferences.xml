@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:key="pdf_swipe_horizontal"
+        android:title="PDF Swipe Horizontal"
+        android:summary="Enable horizontal PDF swipe"
+        android:defaultValue="true"/>
+
+    <ListPreference
+        android:key="example_list_preference"
+        android:title="Example List Preference"
+        android:summary="Select an option from the list"
+        android:entries="@array/list_entries"
+        android:entryValues="@array/list_values" />
+
+    <PreferenceCategory
+        android:title="Licenses" />
+
+    <Preference
+        android:key="android_pdfviewer_license"
+        android:title="Android PdfViewer" />
+
+    <Preference
+        android:key="androidx_preferences_license"
+        android:title="Androidx Preferences" />
+
+</PreferenceScreen>
